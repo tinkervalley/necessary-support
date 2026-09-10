@@ -1,11 +1,223 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Privacy Policy — Necessary</title><link rel="stylesheet" href="../styles.css"></head><body><div class="wrap"><nav class="nav"><a class="brand" href="../"><span class="mark"></span><span>Necessary</span></a><div class="navlinks"><a href="../support/">Support</a><a href="../privacy/">Privacy</a></div></nav>
-<main class="page"><div class="panel"><span class="eyebrow">Privacy</span><h1>Privacy Policy</h1><p class="meta">Last updated: September 10, 2026</p><p>Necessary is a personal budgeting application designed to help you understand your spending and distinguish between necessary and unnecessary purchases.</p>
-<h2>Information We Collect</h2><p>Depending on the features you use, Necessary may collect and store information including:</p><ul><li>Account information such as your email address and user identifier.</li><li>Financial transaction information such as transaction descriptions, dates, amounts, and related transaction data.</li><li>Budget amounts and spending preferences.</li><li>Your classification of transactions as necessary, unnecessary, or excluded.</li></ul>
-<h2>How We Use Information</h2><p>We use this information to provide Necessary's features, authenticate your account, synchronize your information, display your transactions, calculate spending totals, and show your budget progress.</p><p>We do not sell your personal or financial information. We do not use your financial information for advertising, and we do not use your information to track you across apps or websites owned by other companies.</p>
-<h2>Data Storage and Service Providers</h2><p>Necessary uses third-party infrastructure providers, including Supabase, to provide backend services such as authentication, database storage, and synchronization. Information required to provide the service may be transmitted to and processed by these providers.</p>
-<h2>Data Security</h2><p>We take reasonable technical and organizational measures designed to protect information against unauthorized access, disclosure, alteration, or destruction. No method of electronic transmission or storage can be guaranteed to be completely secure.</p>
-<h2>Data Retention and Deletion</h2><p>Information is retained for as long as needed to provide Necessary and maintain your account, subject to applicable legal requirements. If account deletion is available for your account, you may initiate it through the app. You may also contact support if you need assistance with a privacy or deletion request.</p>
-<h2>Children's Privacy</h2><p>Necessary is not intended for children under 13, and we do not knowingly collect personal information from children under 13.</p>
-<h2>Changes to This Policy</h2><p>We may update this Privacy Policy as Necessary evolves. When we do, we will update the date shown at the top of this page.</p>
-<h2>Contact</h2><p>If you have questions about this Privacy Policy or your data, contact <a href="mailto:support@necessary.app">support@necessary.app</a>.</p></div></main>
-<footer class="footer"><span>© 2026 Necessary</span><span><a href="../">Home</a><a href="../support/">Support</a></span></footer></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Privacy Policy for Necessary, a household spending app." />
+  <title>Privacy Policy — Necessary</title>
+  <style>
+    :root {
+      --bg: #f7f7f3;
+      --card: #ffffff;
+      --text: #10211b;
+      --muted: #6f7a75;
+      --accent: #1f6b4f;
+      --border: #e8ece8;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      background: var(--bg);
+      color-scheme: light;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display",
+                   "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(31,107,79,0.08), transparent 28rem),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main {
+      width: min(760px, calc(100% - 32px));
+      margin: 56px auto;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 30px;
+      color: var(--accent);
+      font-weight: 700;
+      text-decoration: none;
+      letter-spacing: -0.02em;
+    }
+
+    .mark {
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      background: var(--accent);
+      display: grid;
+      place-items: center;
+      color: white;
+      font-weight: 800;
+      font-size: 19px;
+    }
+
+    article {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: clamp(26px, 5vw, 52px);
+      box-shadow: 0 18px 55px rgba(20, 43, 34, 0.07);
+    }
+
+    h1, h2 {
+      letter-spacing: -0.035em;
+      line-height: 1.15;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 7vw, 3.4rem);
+      margin: 0 0 14px;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      margin: 2.2rem 0 0.6rem;
+    }
+
+    p {
+      margin: 0.4rem 0 1rem;
+      color: var(--muted);
+      font-size: 1.03rem;
+    }
+
+    .effective {
+      display: inline-block;
+      margin-top: 4px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: #edf5f0;
+      color: var(--accent);
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      margin: 26px 0 10px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 560px) {
+      main {
+        width: min(100% - 20px, 760px);
+        margin: 20px auto 30px;
+      }
+
+      article {
+        border-radius: 22px;
+        padding: 24px 22px 30px;
+      }
+
+      .brand {
+        margin-left: 6px;
+        margin-bottom: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="brand" href="../" aria-label="Necessary home">
+      <span class="mark">N</span>
+      <span>Necessary</span>
+    </a>
+
+    <article>
+      <h1>Privacy Policy</h1>
+      <span class="effective">Effective September 10, 2026</span>
+
+      <h2>Overview</h2>
+      <p>
+        Necessary is a household spending app. It uses the information you provide
+        to create your account, sync your household, show your spending, and
+        deliver the features you request. Necessary does not sell personal
+        information or use it for advertising.
+      </p>
+
+      <h2>Information Necessary processes</h2>
+      <p>
+        Account information includes your email address and account identifier.
+        Household data can include members, invitations, pay periods, category
+        settings, merchant rules, budget additions, transaction dates, amounts,
+        merchants, account names, review decisions, and the member associated with
+        a transaction.
+      </p>
+      <p>
+        A device token is stored when you enable push notifications. An import
+        token and transactions waiting to upload can be stored securely on your
+        device when you use Shortcuts or the Transaction Import API.
+      </p>
+
+      <h2>How information is used</h2>
+      <p>
+        This information is used to authenticate you, sync data across devices,
+        share household information with household members, calculate spending
+        summaries, process transaction imports, prevent duplicate imports, and
+        send requested transaction-review notifications.
+      </p>
+
+      <h2>Service providers</h2>
+      <p>
+        Supabase provides authentication, database, and server functions.
+        Logo.dev receives a merchant name or website domain when Necessary requests
+        an optional merchant logo. Apple provides platform services such as push
+        notifications, widgets, Shortcuts, and App Store distribution. These
+        providers process information under their own terms and privacy policies.
+      </p>
+
+      <h2>Sharing within a household</h2>
+      <p>
+        Members of the same household can view the household’s transactions and
+        settings, including the member associated with a transaction. Invite only
+        people you trust.
+      </p>
+
+      <h2>Retention and deletion</h2>
+      <p>
+        Information remains available while your account or household requires it.
+        You can delete individual transactions in Necessary. You can permanently
+        delete your account from Settings.
+      </p>
+      <p>
+        If you are the only household member, account deletion also deletes the
+        household and its data. If other members remain, household ownership
+        transfers to a remaining member and your membership is removed.
+      </p>
+
+      <h2>Security</h2>
+      <p>
+        Necessary uses Apple Keychain for sensitive tokens on your device and
+        encrypted HTTPS connections for network requests. No system can guarantee
+        absolute security.
+      </p>
+
+      <h2>Children</h2>
+      <p>
+        Necessary is not directed to children under 13 and does not knowingly
+        collect information from them.
+      </p>
+
+      <h2>Changes and contact</h2>
+      <p>
+        This policy may be updated as Necessary changes. The effective date will
+        be updated when that happens. For privacy or support questions, use the
+        Support link on Necessary’s App Store page.
+      </p>
+    </article>
+
+    <footer>© 2026 Necessary</footer>
+  </main>
+</body>
+</html>
