@@ -1,223 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Privacy Policy for Necessary, a household spending app." />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d1713" media="(prefers-color-scheme: dark)">
+  <meta name="description" content="Privacy Policy for Necessary, a household spending app.">
   <title>Privacy Policy — Necessary</title>
-  <style>
-    :root {
-      --bg: #f7f7f3;
-      --card: #ffffff;
-      --text: #10211b;
-      --muted: #6f7a75;
-      --accent: #1f6b4f;
-      --border: #e8ece8;
-    }
-
-    * { box-sizing: border-box; }
-
-    html {
-      background: var(--bg);
-      color-scheme: light;
-    }
-
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display",
-                   "Segoe UI", sans-serif;
-      background:
-        radial-gradient(circle at top left, rgba(31,107,79,0.08), transparent 28rem),
-        var(--bg);
-      color: var(--text);
-      line-height: 1.65;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    main {
-      width: min(760px, calc(100% - 32px));
-      margin: 56px auto;
-    }
-
-    .brand {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 30px;
-      color: var(--accent);
-      font-weight: 700;
-      text-decoration: none;
-      letter-spacing: -0.02em;
-    }
-
-    .mark {
-      width: 34px;
-      height: 34px;
-      border-radius: 10px;
-      background: var(--accent);
-      display: grid;
-      place-items: center;
-      color: white;
-      font-weight: 800;
-      font-size: 19px;
-    }
-
-    article {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 28px;
-      padding: clamp(26px, 5vw, 52px);
-      box-shadow: 0 18px 55px rgba(20, 43, 34, 0.07);
-    }
-
-    h1, h2 {
-      letter-spacing: -0.035em;
-      line-height: 1.15;
-    }
-
-    h1 {
-      font-size: clamp(2.2rem, 7vw, 3.4rem);
-      margin: 0 0 14px;
-    }
-
-    h2 {
-      font-size: 1.35rem;
-      margin: 2.2rem 0 0.6rem;
-    }
-
-    p {
-      margin: 0.4rem 0 1rem;
-      color: var(--muted);
-      font-size: 1.03rem;
-    }
-
-    .effective {
-      display: inline-block;
-      margin-top: 4px;
-      padding: 7px 12px;
-      border-radius: 999px;
-      background: #edf5f0;
-      color: var(--accent);
-      font-size: 0.92rem;
-      font-weight: 600;
-    }
-
-    footer {
-      text-align: center;
-      margin: 26px 0 10px;
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 560px) {
-      main {
-        width: min(100% - 20px, 760px);
-        margin: 20px auto 30px;
-      }
-
-      article {
-        border-radius: 22px;
-        padding: 24px 22px 30px;
-      }
-
-      .brand {
-        margin-left: 6px;
-        margin-bottom: 18px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-  <main>
-    <a class="brand" href="../" aria-label="Necessary home">
-      <span class="mark">N</span>
-      <span>Necessary</span>
-    </a>
+  <div class="wrap">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="../" aria-label="Necessary home"><span class="mark" aria-hidden="true"></span><span>Necessary</span></a>
+      <div class="navlinks"><a href="../support/">Support</a><a href="./" aria-current="page">Privacy</a></div>
+    </nav>
 
-    <article>
-      <h1>Privacy Policy</h1>
-      <span class="effective">Effective September 10, 2026</span>
+    <main class="page">
+      <article class="panel policy">
+        <span class="eyebrow">Privacy</span>
+        <h1>Privacy Policy</h1>
+        <p class="meta">Effective September 11, 2026</p>
 
-      <h2>Overview</h2>
-      <p>
-        Necessary is a household spending app. It uses the information you provide
-        to create your account, sync your household, show your spending, and
-        deliver the features you request. Necessary does not sell personal
-        information or use it for advertising.
-      </p>
+        <h2>Overview</h2>
+        <p>Necessary is a household spending app. It uses the information you provide to create your account, sync your household, show your spending, and deliver the features you request. Necessary does not sell personal information or use it for advertising.</p>
 
-      <h2>Information Necessary processes</h2>
-      <p>
-        Account information includes your email address and account identifier.
-        Household data can include members, invitations, pay periods, category
-        settings, merchant rules, budget additions, transaction dates, amounts,
-        merchants, account names, review decisions, and the member associated with
-        a transaction.
-      </p>
-      <p>
-        A device token is stored when you enable push notifications. An import
-        token and transactions waiting to upload can be stored securely on your
-        device when you use Shortcuts or the Transaction Import API.
-      </p>
+        <h2>Information Necessary processes</h2>
+        <p>Account information includes your email address, profile name, and account identifier. Household data can include its name, members, invitations, pay periods, category settings, merchant rules, budget additions, transaction dates, amounts, merchants, account names, review decisions, and the member associated with a transaction.</p>
+        <p>A device token is stored when you enable push notifications. An import token and transactions waiting to upload can be stored on your device when you use Apple Wallet with Shortcuts or the advanced transaction import API.</p>
 
-      <h2>How information is used</h2>
-      <p>
-        This information is used to authenticate you, sync data across devices,
-        share household information with household members, calculate spending
-        summaries, process transaction imports, prevent duplicate imports, and
-        send requested transaction-review notifications.
-      </p>
+        <h2>How information is used</h2>
+        <p>This information is used to authenticate you, sync data across devices, share household information with household members, calculate spending summaries, process transaction imports, prevent duplicate imports, and send requested transaction-review notifications.</p>
 
-      <h2>Service providers</h2>
-      <p>
-        Supabase provides authentication, database, and server functions.
-        Logo.dev receives a merchant name or website domain when Necessary requests
-        an optional merchant logo. Apple provides platform services such as push
-        notifications, widgets, Shortcuts, and App Store distribution. These
-        providers process information under their own terms and privacy policies.
-      </p>
+        <h2>Service providers</h2>
+        <p>Supabase provides authentication, database, and server functions. Logo.dev receives a merchant name or website domain when Necessary requests an optional merchant logo. Apple provides platform services such as push notifications, widgets, Shortcuts, Apple Wallet automation, and App Store distribution. These providers process information under their own terms and privacy policies.</p>
 
-      <h2>Sharing within a household</h2>
-      <p>
-        Members of the same household can view the household’s transactions and
-        settings, including the member associated with a transaction. Invite only
-        people you trust.
-      </p>
+        <h2>Sharing within a household</h2>
+        <p>Members of the same household can view the household’s transactions and settings, including the member associated with a transaction. Invite only people you trust.</p>
 
-      <h2>Retention and deletion</h2>
-      <p>
-        Information remains available while your account or household requires it.
-        You can delete individual transactions in Necessary. You can permanently
-        delete your account from Settings.
-      </p>
-      <p>
-        If you are the only household member, account deletion also deletes the
-        household and its data. If other members remain, household ownership
-        transfers to a remaining member and your membership is removed.
-      </p>
+        <h2>Your choices</h2>
+        <p>You choose whether to enable notifications, category budgets, merchant logos, and Apple Wallet automation. You can edit merchant settings and review decisions, delete transactions and budget additions, or disconnect an Apple Wallet automation in Shortcuts.</p>
 
-      <h2>Security</h2>
-      <p>
-        Necessary uses Apple Keychain for sensitive tokens on your device and
-        encrypted HTTPS connections for network requests. No system can guarantee
-        absolute security.
-      </p>
+        <h2>Retention and deletion</h2>
+        <p>Information remains available while your account or household requires it. You can delete individual transactions and budget additions in Necessary. You can permanently delete your account from Settings.</p>
+        <p>If you are the only household member, account deletion also deletes the household and its data. If other members remain, household ownership transfers to a remaining member and your membership is removed.</p>
 
-      <h2>Children</h2>
-      <p>
-        Necessary is not directed to children under 13 and does not knowingly
-        collect information from them.
-      </p>
+        <h2>Security</h2>
+        <p>Necessary uses Apple Keychain for authentication and transaction-import tokens, an app group container for pending offline transactions and widget data, and encrypted HTTPS connections for network requests. No system can guarantee absolute security.</p>
 
-      <h2>Changes and contact</h2>
-      <p>
-        This policy may be updated as Necessary changes. The effective date will
-        be updated when that happens. For privacy or support questions, use the
-        Support link on Necessary’s App Store page.
-      </p>
-    </article>
+        <h2>Children</h2>
+        <p>Necessary is not directed to children under 13 and does not knowingly collect information from them.</p>
 
-    <footer>© 2026 Necessary</footer>
-  </main>
+        <h2>Changes and contact</h2>
+        <p>This policy may be updated as Necessary changes. The effective date will be updated when that happens. For privacy or support questions, email <a href="mailto:support@tinkervalley.ca">support@tinkervalley.ca</a> or visit <a href="../support/">Necessary Support</a>.</p>
+      </article>
+    </main>
+
+    <footer class="footer"><span>© 2026 Necessary</span><span><a href="../">Home</a><a href="../support/">Support</a></span></footer>
+  </div>
 </body>
 </html>

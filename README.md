@@ -1,22 +1,17 @@
-# Necessary Website
+# Necessary Support
 
-Static GitHub Pages website for Necessary.
+Static GitHub Pages site for Necessary, including the public landing page, support information, and privacy policy.
 
-## Deploy with GitHub Pages
+## Public URLs
 
-1. Create a new public GitHub repository, for example `necessary` or `necessary-support`.
-2. Upload the contents of this folder to the root of the repository.
-3. Open **Settings → Pages** in GitHub.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select the `main` branch and `/ (root)`, then click **Save**.
-6. GitHub will publish the site at a URL similar to:
-   `https://YOURUSERNAME.github.io/necessary/`
+- Home: `https://tinkervalley.github.io/necessary-support/`
+- Support: `https://tinkervalley.github.io/necessary-support/support/`
+- Privacy: `https://tinkervalley.github.io/necessary-support/privacy/`
 
-App Store Connect URLs would then be:
+GitHub Pages should deploy from the `main` branch and repository root.
 
-- Support URL: `https://YOURUSERNAME.github.io/necessary/support/`
-- Privacy Policy URL: `https://YOURUSERNAME.github.io/necessary/privacy/`
+## Keeping the policy current
 
-## Before publishing
+The public policy should stay aligned with `ios/Necessary/PrivacyPolicyView.swift` in the `tinkervalley/necessary` repository. Review both copies whenever Necessary changes its collected data, household sharing, service providers, notifications, Shortcuts integration, local storage, retention, or account deletion behavior.
 
-Replace `support@necessary.app` in the HTML files with the email address you actually want customers to use.
+Support email: `support@tinkervalley.ca`.
