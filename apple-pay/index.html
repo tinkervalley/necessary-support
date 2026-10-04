@@ -23,6 +23,14 @@
         <p class="meta">Download for iOS 27 · Updated October 3, 2026</p>
         <div class="buttons"><a class="btn primary" href="downloads/Necessary%20Apple%20Pay.shortcut">Download shortcut</a></div>
         <p class="download-note">Install Necessary and sign in first. The shortcut is free and does not contain a connection key or saved payment cards.</p>
+        <h2>Watch the setup</h2>
+        <p>A one-minute walkthrough recorded in the iOS 27 iPhone simulator. It uses Any Card; on your iPhone, you can choose specific cards instead.</p>
+        <video class="setup-video" controls playsinline preload="metadata" poster="media/09-automation-enabled.png" aria-label="How to install and enable the Necessary Apple Pay shortcut on iOS 27">
+          <source src="media/necessary-apple-pay-ios27.mp4" type="video/mp4">
+          <track kind="captions" src="media/setup-captions.vtt" srclang="en" label="English setup instructions">
+          <p><a href="media/necessary-apple-pay-ios27.mp4">Download the setup video</a>.</p>
+        </video>
+        <p class="video-download"><a href="media/necessary-apple-pay-ios27.mp4" download>Download video</a> · Enable captions in the player for step-by-step prompts.</p>
         <h2>Set up on iOS 27</h2>
         <ol class="setup-steps">
           <li><strong>Download the shortcut.</strong> Tap Download shortcut above. If Safari asks, confirm the download, then open the downloaded file from Safari’s downloads or Files.</li>
@@ -31,6 +39,12 @@
           <li><strong>Enable it.</strong> Expand the Wallet trigger with its arrow, then turn on Automation. Tap Back when you’re done; Shortcuts saves the changes.</li>
           <li><strong>Check a purchase.</strong> Make a small Apple Pay purchase and open Necessary to confirm the transaction appears for review.</li>
         </ol>
+        <div class="setup-gallery" aria-label="Setup screenshots">
+          <figure><a href="media/04-shortcut-import.png"><img src="media/04-shortcut-import.png" alt="Shortcuts import screen showing Necessary Apple Pay and the Set Up Shortcut button" width="1206" height="2622" loading="lazy"></a><figcaption>1. Open the downloaded file in Shortcuts.</figcaption></figure>
+          <figure><a href="media/06-edit-automation.png"><img src="media/06-edit-automation.png" alt="Necessary Apple Pay editor with the Wallet trigger’s Cards field" width="1206" height="2622" loading="lazy"></a><figcaption>2. Open Editor to see the automation.</figcaption></figure>
+          <figure><a href="media/07-choose-card.png"><img src="media/07-choose-card.png" alt="Card selection screen showing Any Card and Done" width="1206" height="2622" loading="lazy"></a><figcaption>3. Choose your cards or Any Card.</figcaption></figure>
+          <figure><a href="media/09-automation-enabled.png"><img src="media/09-automation-enabled.png" alt="Wallet transaction trigger expanded with the Automation switch enabled" width="1206" height="2622" loading="lazy"></a><figcaption>4. Expand the trigger and turn on Automation.</figcaption></figure>
+        </div>
         <h2>What gets sent?</h2>
         <p>The shortcut passes the transaction’s name and amount, the card name, and the current date. Wallet may leave out details for some purchases or preauthorizations. Necessary skips events without a merchant; purchases without an amount wait for you to enter it in the app.</p>
         <h2>Using iOS 26 or earlier?</h2>

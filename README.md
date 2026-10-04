@@ -20,3 +20,5 @@ Support email: `support@tinkervalley.ca`.
 ## Updating the Apple Pay shortcut
 
 The signed public download lives at `apple-pay/downloads/Necessary Apple Pay.shortcut`. Remove personal Wallet card identifiers before sharing, sign it for anyone, and keep the setup instructions and update date in sync. Test the download on an iPhone before replacing it. Existing installations do not update automatically.
+
+The setup walkthrough and screenshots in `apple-pay/media/` were captured in the iOS 27 iPhone simulator. The video shows installation and activation, not an actual Apple Pay payment. Keep these assets and their captions current when setup steps change.
