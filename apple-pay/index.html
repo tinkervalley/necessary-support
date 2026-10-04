@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d1713" media="(prefers-color-scheme: dark)">
+  <meta name="description" content="Set up Necessary’s Apple Pay shortcut on iOS 27, or follow the manual setup for earlier iOS versions.">
+  <title>Apple Pay setup — Necessary</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="../" aria-label="Necessary home"><span class="mark" aria-hidden="true"></span><span>Necessary</span></a>
+      <div class="navlinks"><a href="../support/">Support</a><a href="../privacy/">Privacy</a></div>
+    </nav>
+    <main class="page">
+      <article class="panel">
+        <span class="eyebrow">Apple Pay + Necessary</span>
+        <h1>Tap to pay.<br>Ready to review.</h1>
+        <p class="lead">Send Apple Pay purchases to your signed-in Necessary account using a Wallet automation in Shortcuts.</p>
+        <p class="meta">Download for iOS 27 · Updated October 3, 2026</p>
+        <div class="buttons"><a class="btn primary" href="downloads/Necessary%20Apple%20Pay.shortcut">Download shortcut</a></div>
+        <p class="download-note">Install Necessary and sign in first. The shortcut is free and does not contain a connection key or saved payment cards.</p>
+        <h2>Set up on iOS 27</h2>
+        <ol class="setup-steps">
+          <li><strong>Download the shortcut.</strong> Tap Download shortcut above. If Safari asks, confirm the download, then open the downloaded file from Safari’s downloads or Files.</li>
+          <li><strong>Open it in Shortcuts.</strong> Follow the prompts to add Necessary Apple Pay. Leave the automation disabled until you have selected your cards.</li>
+          <li><strong>Edit the automation.</strong> Open the shortcut’s editor and its Wallet transaction automation. Choose the Apple Pay cards you want to track.</li>
+          <li><strong>Enable it.</strong> Turn on Enable This Automation and select Run Immediately if offered. Save your changes.</li>
+          <li><strong>Check a purchase.</strong> Make a small Apple Pay purchase and open Necessary to confirm the transaction appears for review.</li>
+        </ol>
+        <h2>What gets sent?</h2>
+        <p>The shortcut passes the transaction’s name and amount, the card name, and the current date. Wallet may leave out details for some purchases or preauthorizations. Necessary skips events without a merchant; purchases without an amount wait for you to enter it in the app.</p>
+        <p>The current download uses Wallet’s Name field. We’re testing the Merchant field for more accurate names on prepaid purchases.</p>
+        <h2>Using iOS 26 or earlier?</h2>
+        <p>Create the automation manually in Shortcuts instead of importing its automation from the file.</p>
+        <ol class="setup-steps">
+          <li>In Shortcuts, open Automation, tap +, and choose the Wallet transaction trigger.</li>
+          <li>Select your cards and choose Run Immediately.</li>
+          <li>Add Necessary’s <strong>Add Apple Pay Transaction</strong> action.</li>
+          <li>Fill Merchant and Amount using the Wallet transaction’s properties. Use Current Date for Date and the card name for Account Name.</li>
+          <li>Save it and check a small purchase in Necessary.</li>
+        </ol>
+        <h2>Already have the shortcut?</h2>
+        <p>Downloading a new copy does not update an existing automation automatically. Update or replace your existing setup, and leave only one automation enabled to avoid duplicate imports.</p>
+        <p>Need help? <a href="../support/">Visit support</a>.</p>
+      </article>
+    </main>
+    <footer class="footer"><span>© 2026 Necessary</span><span><a href="../support/">Support</a><a href="../privacy/">Privacy</a></span></footer>
+  </div>
+</body>
+</html>
